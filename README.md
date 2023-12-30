@@ -28,9 +28,11 @@ Your task is to develop simple web application that manages project entities. Ad
    - Use a relational database (e.g., MySQL, PostgreSQL) to store project data, or in-memory database (e.g., H2). Completely up to you.
 
 4. **Docker Container:**
-   - Dockerize your Java application.
-   - Create a Dockerfile to build the Docker image.
+   - Dockerize your backend application.
+   - Dockerize your frontend application.
+   - Create separate Dockerfile for backend and frontend applications.
    - The Docker container should include all necessary dependencies, and the application should run inside the container.
+   - Have separate containers for backend and frontend applicstions. Use docker compose for this purpose.
 
 5. **Documentation:**
    - Provide clear and concise documentation on how to build and run the Docker container locally.
@@ -39,11 +41,10 @@ Your task is to develop simple web application that manages project entities. Ad
 **Submission Guidelines:**
 
 1. **Code Submission:**
-   - Submit the source code of your Java application along with any configuration files to public GitHub repo
-   - Include the Dockerfile in the submission.
+   - Submit the source code of your web application along with any configuration files to public GitHub repo
 
 2. **Documentation Submission:**
-   - Submit a README.md file that includes instructions for building and running the Docker container.
+   - Submit a README.md file that includes instructions for building and running the Docker containers.
    - Include examples of API requests to demonstrate the functionality.
 
 **Evaluation Criteria:**
