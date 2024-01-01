@@ -1,74 +1,59 @@
 **Home Assessment Task for FullStack Team Leader**
 
 **Task Overview:**
-Your task is to develop simple web application that manages project entities. Additionally, you are required to containerize the application parts using Docker.
+Your objective is to create a simple web application allowing users to maintain a list of image URLs and play a slideshow with crossfade transitions.
 
 **Requirements:**
 
 1. **Frontend Part:**
-   - Create UI application to interact with user. Use Angular as a framework to build on.
-   - UI interface will include
-      - upon load, fetch existing projects and list them them in the table. The table will include next columns: id, name, description, start date, and end date of the project.
-      - functionality to update name and/or description of existing project.
-      - functionality to create a new project. New project will have name, description and start date.
-      - functionality to delete specific project.
+   - Develop a UI application using Angular.
+   - UI features
+      - register new user (username, password)
+      - login and logout functionality
+      - manage list of image urls: add, delete
+      - play a slideshow of existing images
 
 2. **Backend Part:**
    - Create a Java application using a suitable framework (e.g., Spring Boot) to implement a RESTful API.
-   - The application should include CRUD operations for managing projects.
-   - A project should have at least a name, description, start date, and end date.
+   - Include user registration and login.
+   - Secure image URL management APIs using a token obtained upon login.
    - Implement the following RESTful API endpoints:
-      - `GET /projects`: Retrieve a list of all projects.
-      - `GET /projects/{id}`: Retrieve details of a specific project.
-      - `POST /projects`: Create a new project.
-      - `PUT /projects/{id}`: Update an existing project.
-      - `DELETE /projects/{id}`: Delete an existing project.
+      - `POST /register`: Register a new user.
+      - `POST /login`: Login a user.
+      - `POST /logout`: Logout a user.
+      - `POST /addImage`: Add a new image URL.
+      - `DELETE /deleteImage/{id}`: Delete an existing image URL.
+      - `GET /images`: Retrieve a list of image URLs.
 
 3. **Database:**
-   - Use a relational database (e.g., MySQL, PostgreSQL) to store project data, or in-memory database (e.g., H2). Completely up to you.
+   - Use a relational database (e.g., MySQL, PostgreSQL) to store project data, or in-memory database (e.g., H2).
 
-4. **Docker Container:**
-   - Dockerize your backend application.
-   - Dockerize your frontend application.
-   - Create separate Dockerfile for backend and frontend applications.
-   - The Docker container should include all necessary dependencies, and the application should run inside the container.
-   - Have separate containers for backend and frontend applicstions. Use docker compose for this purpose.
-
-5. **Documentation:**
-   - Provide clear and concise documentation on how to build and run the Docker container locally.
-   - Include instructions on how to use the REST API endpoints (e.g., using cURL or Postman).
+4. **Documentation:**
+   - Include user-friendly instructions in the README.md file.
+   - Provide examples of API requests for demonstration (e.g., using cURL or Postman) in the README.md file.
 
 **Submission Guidelines:**
 
 1. **Code Submission:**
-   - Submit the source code of your web application along with any configuration files to public GitHub repo
-
-2. **Documentation Submission:**
-   - Submit a README.md file that includes instructions for building and running the Docker containers.
-   - Include examples of API requests to demonstrate the functionality.
+   - Share the source code of your web application in a public GitHub repository.
 
 **Evaluation Criteria:**
 
 1. **Functionality:**
-   - CRUD operations should work correctly.
-   - The REST API should follow best practices.
-   - Proper HTTP status codes and error handling should be implemented.
+   - Use modern versions of backend/frontend frameworks.
+   - The REST APIs should follow best practices. 
+   - Implement proper HTTP status codes and error handling consistently on both frontend and backend.
    - The application should handle errors gracefully.
-   - UI should have minimal interface, but nice looking. Apply minimal CSS in order to grant minimal pretty look-and-feel.
+   - Do not overcomplicate the application, this is not be supposed a task of days, but hours. Do not cut cornerns when it could impact on the application   functionality and user experience.
+   - Develop a functional UI with minimal yet aesthetically pleasing design using minimal CSS.
 
-3. **Docker Containerization:**
-   - The Docker container should be successfully built.
-   - The container should be able to run the application without issues.
-
-6. **Code Quality:**
-   - Code should be well-organized and follow best practices.
-   - Use meaningful variable and method names.
-   - Include comments where necessary.
+2. **Code Quality:**
+   - Organize code effectively, adhering to best practices.
+   - Include necessary comments for code clarity.
 
 **Additional Notes:**
 
-- Feel free to use any additional libraries or tools that you think would be beneficial.
-- If you encounter any challenges or limitations during the process, document them in the README.md file.
-- Make sure to respect best practices for secure coding and containerization.
+   - Feel free to use any additional libraries or tools that you think would be beneficial.
+   - If you encounter any challenges or limitations during the process, document them in the README.md file.
 
-Good luck! If you have any questions or need clarification on the requirements, feel free to reach out.
+Best of luck! Should you have any questions or require clarification on the requirements, feel free to reach out.
