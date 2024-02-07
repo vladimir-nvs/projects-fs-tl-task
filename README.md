@@ -10,12 +10,11 @@ Your objective is to create a simple web application allowing users to maintain 
    - UI features
       - register new user (username, password)
       - login and logout functionality
-      - manage list of image urls: add, delete
-      - play a slideshow of existing images
+      - manage list of image urls: add, delete, shuffle
+      - play a slideshow of existing images with configurable delay (each 2 sec, each 5 sec)
 
 2. **Backend Part:**
-   - Create a Java application using a suitable framework (e.g., Spring Boot) to implement a RESTful API.
-   - Include user registration and login.
+   - Create a Java Spring Boot application and implement a RESTful APIs.
    - Secure image URL management APIs using a token obtained upon login.
    - Implement the following RESTful API endpoints:
       - `POST /register`: Register a new user.
@@ -23,6 +22,7 @@ Your objective is to create a simple web application allowing users to maintain 
       - `POST /logout`: Logout a user.
       - `POST /addImage`: Add a new image URL.
       - `DELETE /deleteImage/{id}`: Delete an existing image URL.
+      - `POST /shuffleImages`: Shuffle existing images.
       - `GET /images`: Retrieve a list of image URLs.
 
 3. **Database:**
@@ -44,7 +44,7 @@ Your objective is to create a simple web application allowing users to maintain 
    - The REST APIs should follow best practices. 
    - Implement proper HTTP status codes and error handling consistently on both frontend and backend.
    - The application should handle errors gracefully.
-   - Do not overcomplicate the application, this is not be supposed a task of days, but hours. Do not cut cornerns when it could impact on the application   functionality and user experience.
+   - Do not overcomplicate the application, this is not be supposed a task of days, but hours. Do not cut cornerns when it could impact on the application functionality and user experience.
    - Develop a functional UI with minimal yet aesthetically pleasing design using minimal CSS.
 
 2. **Code Quality:**
@@ -56,4 +56,4 @@ Your objective is to create a simple web application allowing users to maintain 
    - Feel free to use any additional libraries or tools that you think would be beneficial.
    - If you encounter any challenges or limitations during the process, document them in the README.md file.
 
-Best of luck! Should you have any questions or require clarification on the requirements, feel free to reach out.
+Best of luck!
